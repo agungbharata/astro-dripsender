@@ -1,0 +1,122 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon";
+
+const features = [
+  {
+    title: "Easy Acces",
+    description: "Bisa di akses dan dioperasikan menggunakan laptop atau smartphone, baik Windows, Android atau iOs",
+    icon: "flat-color-icons:multiple-devices",
+  },
+  {
+    title: "Multi Admin",
+    description: "Bisa masukkan lebih dari 1 no WA dan invite admin untuk membantu melakukan marketing campaign",
+    icon: "flat-color-icons:conference-call",
+  },
+  {
+    title: "List Building",
+    description: "Membangun list kontak database bisa dilakukan dengan sangat mudah dan cepat. Cukup 1-3 klik saja",
+    icon: "flat-color-icons:todo-list",
+  },
+  {
+    title: "Bulk Broadcast",
+    description: "Kirim ribuan marketing campaign lebih mudah dan cepat, tak perlu manual lagi untuk promosi",
+    icon: "flat-color-icons:advertising",
+  },
+  {
+    title: "Schedule Broadcast",
+    description: "Atur jadwal broadcast pesan promo untuk ribuan database, terkirim otomatis sesuai jadwal pengiriman broadcast",
+    icon: "flat-color-icons:overtime",
+  },
+  {
+    title: "Interactive Broadcast",
+    description: "Kirim broadcast promo dengan berbagai tipe pesan seperti teks, tombol, daftar menu dan lainnya",
+    icon: "flat-color-icons:collaboration",
+  },
+  {
+    title: "Boost Engagement",
+    description: "Bikin pesan broadcast Anda agar mudah direspon oleh penerima broadcast",
+    icon: "flat-color-icons:bullish",
+  },
+  {
+    title: "Autoreply Bot",
+    description: "Jawab pesan dari customer dengan cepat dan otomatis tanpa mengetik balasan secara manual",
+    icon: "flat-color-icons:voice-presentation",
+  },
+  {
+    title: "Unlimited Database",
+    description: "Bisa mengumpulkan kontak database semau Anda, tidak ada batasan jumlah kontak database",
+    icon: "flat-color-icons:add-database",
+  },
+  {
+    title: "Unlimited Broadcast",
+    description: "Bisa kirim broadcast promosi / balas otomatis tanpa ada batasan",
+    icon: "flat-color-icons:ratings",
+  },
+  {
+    title: "Unlimited Chatbot",
+    description: "Bikin chatbot sebanyak yang Anda mau. Menyediakan jawaban atas F.A.Q customer",
+    icon: "flat-color-icons:services",
+  },
+  {
+    title: "Send Any File",
+    description: "Kirim berbagai macam file pendukung saat melakukan broadcast seperti file pdf, gambar hingga video",
+    icon: "flat-color-icons:gallery",
+  },
+  {
+    title: "Auto Follow Up",
+    description: "Atur pesan follow up nya, sisanya biar Dripsender yang bekerja otomatis melakukan follow up",
+    icon: "flat-color-icons:customer-support",
+  },
+  {
+    title: "Drip Message",
+    description: "Kirim pesan berantai sesuai jadwal yang diinginkan. Meningkatkan interaksi dengan customer",
+    icon: "flat-color-icons:feedback",
+  },
+  {
+    title: "Botform Engine",
+    description: "Memungkinkan membuat form survei di dalam pesan broadcast untuk mengumpulkan data customer",
+    icon: "flat-color-icons:inspection",
+  },
+  {
+    title: "Funneling Database",
+    description: "Miliki kontak database yang berkualitas dengan melakukan funneling menggunakan Dripsender",
+    icon: "flat-color-icons:filled-filter",
+  },
+  {
+    title: "Warming Up Number",
+    description: "Anda harus melatih nomor baru agar tidak mudah diblokir WA. Makin banyak no WA makin bagus",
+    icon: "flat-color-icons:charge-battery",
+  },
+  {
+    title: "Export-Import",
+    description: "Database yang telah dikumpulkan bisa diimpor ke Dripsender atau diekspor dalam bentuk file csv.",
+    icon: "flat-color-icons:data-configuration",
+  },
+];
+---
+
+<div class="max-full bg-slate-50 lg:py-24 py-12">
+  <div class="max-w-screen-xl mx-auto px-5">
+    <div class="mt-16 md:mt-0">
+      <h2 class="text-3xl lg:text-5xl font-bold tracking-tighter text-center">Dripsender Memudahkan Bisnis Anda</h2>
+      <p class="lg:text-xl text-md mt-4 text-slate-600 text-center">
+        Apapun yang Anda butuhkan untuk mengelola bisnis dengan Whatsapp marketing ada di sini
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-8">
+      {
+        features.map((item) => (
+          <div class="relative flex flex-col p-6 bg-white dark:bg-slate-900 rounded shadow-lg hover:shadow-md transition border border-transparent dark:border-slate-800">
+            <div class="flex items-center">
+              <Icon name={item.icon} class="w-10 h-10" />
+              <div class="ml-4 text-xl font-bold">{item.title}</div>
+            </div>
+            <p class="text-slate-500 mt-1 leading-relaxed">{item.description}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</div>
